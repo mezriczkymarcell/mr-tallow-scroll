@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Mr Tallow — fekete és arany. Forgasd körbe, majd fedezd fel a címke részleteit.">
+<title>Mr Tallow</title>
+<link rel="preload" as="image" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="frames/frame_0001.avif" type="image/avif">
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <img class="brand" src="assets/logo.svg" alt="Mr Tallow" width="750" height="398">
+</header>
+<main>
+<section class="story" id="story" aria-label="Az üveg körbeforgatása görgetéssel">
+  <div class="stage" id="stage">
+    <div class="product-frame">
+      <canvas id="product" width="1080" height="1080" aria-label="Mr Tallow üveg, görgetésre finoman körbefordul"></canvas>
+    </div>
+    <div class="scroll-cue" id="scrollCue"><span>Görgess lassan</span><span class="scroll-line" aria-hidden="true"></span></div>
+  </div>
+</section>
+<section class="details" id="details" aria-labelledby="detailsTitle">
+  <div class="details-heading">
+    <p class="eyebrow">Fekete. Arany. Részletek.</p>
+    <h1 id="detailsTitle">Nézd meg közelebbről.</h1>
+    <p class="intro">A fény változik. A részletek megmaradnak.</p>
+  </div>
+  <div class="label-viewport" id="labelViewport" tabindex="0" aria-label="Nagyítható címke. Két ujjal nagyíthatsz, egy ujjal mozgathatod. Dupla koppintással nagyíthatsz és visszaállíthatod. Billentyűzettel plusz, mínusz és Escape.">
+    <div class="label-plane" id="labelPlane">
+      <picture>
+        <img id="labelArtwork" src="assets/label.jpg" alt="A Mr Tallow teljes fekete-arany címkegrafikája" width="4096" height="1807" loading="lazy" decoding="async" draggable="false">
+      </picture>
+      <div class="foil-light" aria-hidden="true"></div>
+    </div>
+    <span class="viewer-corner corner-a" aria-hidden="true"></span><span class="viewer-corner corner-b" aria-hidden="true"></span>
+  </div>
+  <p class="gesture-hint">Két ujjal nagyíts. Egy ujjal mozdítsd.<br><span>Dupla koppintás: közelebb / vissza.</span></p>
+</section>
+</main>
+<footer>Mr Tallow <span aria-hidden="true">·</span> Premium Beef Tallow</footer>
+<noscript>A forgatás és a címkenézegető JavaScriptet használ.</noscript>
+</body>
+</html>
